@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>mapart - 7班課題研究</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1>あなたのマップ</h1>
+    <button id="walkStart">
+        <span id="start">
+            Start
+        </span>
+    </button>
+    <div id="map" style="height: 500px;"></div>
+    <div id="realtime"></div>
+
+    <!-- クリックで遷移する画像 -->
+    <img src="./img/icon_101661_64.png" id="clickable-image.supotto">
+    <img src="./img/icon_132271_64.png" id="clickable-image.hozon">
+    <img src="./img/icon_159121_64.png" id="clickable-image.kyouyu">
+    <img src="./img/icon_000011_64.png" id="clickable-image.settei">
+
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="firebase.js"></script>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
