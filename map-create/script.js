@@ -195,7 +195,7 @@ async function getapiAround(lat,lon){
   // lat = 35.89066680515657
   // lon = 139.94405240019375
   const overpassQuery = encodeURI('[out:json];(way["highway"](around:'+radius+','+lat+','+lon+'););out body;>;out skel;');
-  const url = "http://overpass-api.de/api/interpreter?data="+overpassQuery
+  const url = "https://overpass-api.de/api/interpreter?data="+overpassQuery
   const res = await fetch(url,{
     headers:{
       "User-Agent":"mapart"
