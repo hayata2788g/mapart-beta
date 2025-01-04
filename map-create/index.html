@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>mapart - 7班課題研究</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    
+    <button id="getAround">周囲の情報取得</button>
+    
+    <p id="aroundPos">
+        各題：<span class="zoom"></span><br>
+        井戸：<span class="lat"></span><br>
+        経度：<span class="lng"></span><br>
+    </p>
+
+    <h1>あなたのマップ</h1>
+    <div id="map" style="height: 500px;"></div>
+    <div id="realtime"></div>
+    <div id="routeDetail"></div>
+    <div id="routeOut" class="scroll"></div>
+
+    <!-- クリックで遷移する画像 -->
+    <img src="https://icooon-mono.com/i/icon_10166/icon_101661_64.png" id="clickable-image.supotto">
+    <img src="https://icooon-mono.com/i/icon_13227/icon_132271_64.png" id="clickable-image.hozon">
+    <img src="https://icooon-mono.com/i/icon_15912/icon_159121_64.png" id="clickable-image.kyouyu">
+    <img src="https://icooon-mono.com/i/icon_00001/icon_000011_64.png" id="clickable-image.settei">
+
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="./script.js"></script>
+
+</body>
+
+</html>
